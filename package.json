@@ -1,0 +1,24 @@
+{
+  "name": "cornerstone",
+  "version": "1.0.0",
+  "description": "Website for northcote cafe",
+  "main": "index.js",
+  "author": "Zosia Fabijanska <zosia.fabijanska@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build-task:scss-compile": "node-sass-chokidar src/scss/ -o public/css",
+    "build-task:autoprefixer": "postcss public/css/*.css --use autoprefixer -d public/css",
+    "sass:build": "npm-run-all -p build-task:*",
+    "sass:watch": "chokidar 'src/scss/**/*.scss' -c 'npm run sass:build'",
+    "dev": "npm-run-all -p sass:*",
+    "reload": "browser-sync start --server --files \"public/css/*.css\" \"public/*.html\" --startPath \"./public\""
+  },
+  "dependencies": {
+    "autoprefixer": "^7.1.6",
+    "browser-sync": "^2.18.13",
+    "chokidar-cli": "^1.2.0",
+    "node-sass-chokidar": "^0.0.3",
+    "npm-run-all": "^4.1.2",
+    "postcss-cli": "^4.1.1"
+  }
+}

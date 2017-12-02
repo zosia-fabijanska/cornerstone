@@ -1,0 +1,10 @@
+body {
+  color: red;
+  font-weight: 600; }
+
+.header {
+  color: #fff; }
+  .header .title {
+    color: red; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLFdBQVc7RUFDWCxpQkFBaUIsRUFBRTs7QUFFckI7RUFDRSxZQUFZLEVBQUU7RUFDZDtJQUNFLFdBQVcsRUFBRSIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJib2R5IHtcbiAgY29sb3I6IHJlZDtcbiAgZm9udC13ZWlnaHQ6IDYwMDsgfVxuXG4uaGVhZGVyIHtcbiAgY29sb3I6ICNmZmY7IH1cbiAgLmhlYWRlciAudGl0bGUge1xuICAgIGNvbG9yOiByZWQ7IH1cbiJdfQ== */
