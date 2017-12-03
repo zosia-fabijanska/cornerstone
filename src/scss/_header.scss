@@ -1,6 +1,8 @@
-.header {
-    color: #fff;
-    .title {
-        color: red;
+.nav-wrapper {
+    background-color: $beige;
+    font-family: $roboto;
+    .corner-logo {
+        max-width: 140px;
     }
 }
+
