@@ -2,7 +2,20 @@
     background-color: $beige;
     font-family: $roboto;
     .corner-logo {
-        max-width: 140px;
+        max-height: 44px;
+    }
+    .corner-nav-link {
+        color: $main-txt-color;
+    }
+    .nav-social {
+        width: 16px;
+    }
+    .collapse-wrapper {
+        max-width: 800px;
     }
 }
 
+.corner-hero {
+    background-image: url('../assets/cafe-header.jpg');
+    height: 600px;
+}
