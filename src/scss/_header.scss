@@ -18,7 +18,20 @@
     }
 }
 
+.header-title {
+    height: 100%;
+    padding: 32px;
+    p {
+        font-family: $roboto;
+        color: $white;
+        text-align: center;
+        font-size: 3em;
+        @media screen and (min-width:540px) {
+            font-size: 5em;
+        }
+    }
+}
 .corner-hero {
     background-image: url('../assets/cafe-header.jpg');
-    height: 700px;
+    height: 650px;
 }

@@ -1,0 +1,24 @@
+.menu-right {
+    text-align: right;
+}
+
+.menu-content {
+    text-align: center;
+    .menu-image {
+        max-width: 310px;
+    }
+    
+    .menu-text {
+        position: absolute;
+        font-size: 11em;
+        top: 15%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        color: $aqua;
+        @media screen and (min-width: 576px) {
+            font-size: 15em;
+            top: 10%;
+        }
+    }
+}
