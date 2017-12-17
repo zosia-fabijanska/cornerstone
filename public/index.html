@@ -127,17 +127,44 @@
       <div class="container" id="location">
           <div class="row">
               <div class="col">
-                <!-- Address -->
+                <p>This is the address</p>
+                <p>Hours</p>
+                <p>Phone</p>
+                <p>Email</p>
               </div>
-              <div class="col">
+              <div class="col" id="map">
                 <!-- Map -->
               </div>
+          </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="container-fluid">
+          <div class="row">
+              
           </div>
       </div>
 
 
 
     <!-- Optional JavaScript -->
+    <script>
+            function initMap() {
+              var northcote = {lat: -37.773, lng: 144.997};
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 14,
+                center: northcote,
+              });
+              var marker = new google.maps.Marker({
+                position: northcote,
+                map: map
+              });
+           }
+    </script>
+    <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnKyFibCZqo9vySnLLqA4gmqfNN_lw3H8&callback=initMap">
+    </script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
