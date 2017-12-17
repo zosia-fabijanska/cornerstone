@@ -1,5 +1,5 @@
 .nav-wrapper {
-    background-color: $beige;
+    background-color: transparent;
     font-family: $roboto;
     .corner-logo {
         max-height: 44px;
@@ -13,9 +13,12 @@
     .collapse-wrapper {
         max-width: 800px;
     }
+    @media screen and (min-width: 992px) {
+        background-color: $beige;
+    }
 }
 
 .corner-hero {
     background-image: url('../assets/cafe-header.jpg');
-    height: 600px;
+    height: 700px;
 }

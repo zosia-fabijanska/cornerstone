@@ -3,3 +3,7 @@ body {
     background-color: $beige;
     font-family: $inconsolata;
 }
+.row {
+    min-height: 300px; 
+    // remove-only example
+}
