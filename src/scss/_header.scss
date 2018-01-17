@@ -32,6 +32,8 @@
     }
 }
 .corner-hero {
-    background-image: url('../assets/cafe-header.jpg');
+    background-image: url('../assets/header.jpg');
     height: 650px;
+    background-size: cover;
+    background-repeat: none;
 }
