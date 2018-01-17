@@ -1,5 +1,5 @@
 .nav-wrapper {
-    background-color: transparent;
+    background-color: $beige;
     font-family: $roboto;
     .corner-logo {
         max-height: 44px;
@@ -12,9 +12,6 @@
     }
     .collapse-wrapper {
         max-width: 800px;
-    }
-    @media screen and (min-width: 992px) {
-        background-color: $beige;
     }
 }
 
