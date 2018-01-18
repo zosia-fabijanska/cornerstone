@@ -1,3 +1,16 @@
+.fresh-logo {
+    img {
+        position: absolute;
+        max-width: 100%;
+    }
+    p {
+        text-align: center;
+        @media screen and (min-width:540px) {
+            padding: 10px 120px;
+        } 
+    }
+}
+
 .carousel-img {
     width: 90%;
     -webkit-filter: grayscale(100%);

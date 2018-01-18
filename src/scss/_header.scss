@@ -18,6 +18,9 @@
 .header-title {
     height: 100%;
     padding: 32px;
+    img {
+        text-align: center;
+    }
     
     p {
         font-family: $roboto;
