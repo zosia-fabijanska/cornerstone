@@ -6,16 +6,27 @@
     p {
         text-align: center;
         @media screen and (min-width:540px) {
-            padding: 10px 120px;
+            padding: 10px 90px;
         } 
     }
 }
 
+.centred {
+    text-align: center;
+}
+
 .carousel-img {
-    width: 90%;
+    width: 100%;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     @media screen and (min-width:540px) {
         max-width: 360px;
+    }
+}
+
+.narrow {
+    padding: 12px;
+    @media screen and (min-width:540px) {
+        padding: 4px;
     }
 }
