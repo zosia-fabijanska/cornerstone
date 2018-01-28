@@ -1,0 +1,16 @@
+.footer {
+    background-color: $aqua;
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .nav-social {
+        width: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    img {
+        width: 120px;
+    }
+}
