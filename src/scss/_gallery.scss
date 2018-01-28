@@ -35,6 +35,7 @@
         &:hover,
         &:active {
             filter: none;
+            transition: all 300ms;
         }
     }
 }

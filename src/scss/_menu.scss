@@ -1,7 +1,10 @@
 .menu-right {
     text-align: right;
+    padding-bottom: 16px;
 }
-
+.menu-left {
+    padding-top: 24px;
+}
 .menu-link {
     color: $main-txt-color;
     text-decoration: underline;

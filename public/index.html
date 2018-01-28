@@ -33,7 +33,7 @@
             <div class="collapse navbar-collapse collapse-wrapper" id="navbarNav">
                 <ul class="navbar-nav d-flex align-items-center justify-content-between w-100">
                     <li class="nav-item active text-center nav-txt nav-txt">
-                        <a class="nav-link corner-nav-link" href="./assets/MENU-re-write.pdf" target="_blank">Menu
+                        <a class="nav-link corner-nav-link" href="./assets/MENU-2018.pdf" target="_blank">Menu
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
@@ -41,13 +41,13 @@
                         <a class="nav-link corner-nav-link" id="to-gallery">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link corner-nav-link" href="#location">Contact</a>
+                        <a class="nav-link corner-nav-link" id="to-contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link corner-nav-link" href="#location">Location</a>
+                        <a class="nav-link corner-nav-link" id="to-location">Location</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link corner-nav-link" href="#">
+                        <a class="nav-link corner-nav-link" href="">
                             <img class="nav-social" src="./assets/002-facebook-logo.png" />
                         </a>
                     </li>
@@ -73,9 +73,7 @@
     <div class="container">
         <div class="row scroll-content">
             <div class="col">
-                <a href="#menu-section">
-                    <img class="scroll-icon" src="./assets/scroll-icon.png" />
-                </a>
+                <img class="scroll-icon" src="./assets/scroll-icon.png" />
             </div>
         </div>
     </div>
@@ -85,7 +83,7 @@
         <div class="row">
             <!-- Breakfast/Lunch -->
             <div class="col align-self-end">
-                <a class="menu-link" href="./assets/MENU-re-write.pdf" target="_blank">
+                <a class="menu-link" href="./assets/MENU-2018.pdf" target="_blank">
                     <p class="menu-right">Breakfast/Lunch</p>
                 </a>
             </div>
@@ -96,8 +94,8 @@
             </div>
             <!-- Coffee/Drinks -->
             <div class="col">
-                <a class="menu-link" href="./assets/MENU-re-write.pdf" target="_blank">
-                    <p>Coffee/Drinks</p>
+                <a class="menu-link" href="./assets/MENU-2018.pdf" target="_blank">
+                    <p class="menu-left">Coffee/Drinks</p>
                 </a>
             </div>
         </div>
@@ -225,9 +223,27 @@
         const $body = $('html, body');
 
         //Event Handlers
-        $("#to-gallery").click( () => {
+        $(".scroll-icon").click(() => {
+            $body.animate({
+                scrollTop: $("#menu-section").offset().top
+            }, 800);
+        });
+
+        $("#to-gallery").click(() => {
             $body.animate({
                 scrollTop: $("#gallery").offset().top
+            }, 800);
+        });
+
+        $("#to-contact").click(() => {
+            $body.animate({
+                scrollTop: $("#location").offset().top
+            }, 800);
+        });
+
+        $("#to-location").click(() => {
+            $body.animate({
+                scrollTop: $("#location").offset().top
             }, 800);
         });
 
