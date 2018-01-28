@@ -1,52 +1,58 @@
 .fresh-logo {
-    img {
-        position: absolute;
-        max-width: 100%;
+  img {
+    position: absolute;
+    max-width: 100%;
+  }
+  p {
+    text-align: center;
+    @media screen and (min-width: 540px) {
+      padding: 10px 90px;
     }
-    p {
-        text-align: center;
-        @media screen and (min-width:540px) {
-            padding: 10px 90px;
-        } 
-    }
+  }
 }
 
 .centred {
-    text-align: center;
+  text-align: center;
 }
 .insta-btn {
-    background-color: $aqua;
+  background-color: $aqua;
+  color: $white;
+  padding: 12px 24px;
+  border-radius: 2px;
+  font-family: $roboto;
+  &:hover {
+    text-decoration: none;
     color: $white;
-    padding: 12px 24px;
-    border-radius: 2px;
-    font-family: $roboto;
-    &:hover {
-        text-decoration: none;
-        color: $white;
-    }
+  }
 }
 
 .carousel-img {
-    width: 100%;
-    @media screen and (min-width:540px) {
-        max-width: 360px;
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-        &:hover,
-        &:active {
-            filter: none;
-            transition: all 300ms;
-        }
+  width: 100%;
+  @media screen and (min-width: 540px) {
+    max-width: 360px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    &:hover,
+    &:active {
+      filter: none;
+      transition: all 300ms;
     }
+  }
+}
+.hide-me {
+  display: none;
+  @media screen and (min-width: 540px) {
+      display: block;
+  }
 }
 
 .narrow {
-    padding: 12px;
-    @media screen and (min-width:540px) {
-        padding: 4px;
-    }
+  padding: 12px;
+  @media screen and (min-width: 540px) {
+    padding: 4px;
+  }
 }
 
 .button-padd {
-    padding: 0px 0px 32px 0px;
+  padding: 0px 0px 32px 0px;
 }
