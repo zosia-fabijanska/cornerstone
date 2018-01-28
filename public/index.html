@@ -38,7 +38,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link corner-nav-link" href="#gallery">Gallery</a>
+                        <a class="nav-link corner-nav-link" id="to-gallery">Gallery</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link corner-nav-link" href="#location">Contact</a>
@@ -61,7 +61,7 @@
         </div>
     </nav>
     <!-- Header -->
-    <div class="corner-hero">
+    <div class="container-fluid corner-hero">
         <div class="row header-title">
             <div class="col align-self-center">
                 <img src="./assets/Bitmap Copy 4.png" alt="cornerstone logo" />
@@ -138,14 +138,14 @@
                 </a>
             </div>
             <div class="col-md-3 narrow">
-                    <a href="https://www.instagram.com/cornerstoneofnorthcote/" target="_blank">
-                        <img class="carousel-img" src="./assets/breakfastbowl.jpg" alt="breakfast bowl fruit muesli" />
-                    </a>
+                <a href="https://www.instagram.com/cornerstoneofnorthcote/" target="_blank">
+                    <img class="carousel-img" src="./assets/breakfastbowl.jpg" alt="breakfast bowl fruit muesli" />
+                </a>
             </div>
             <div class="col-md-3 narrow">
-                    <a href="https://www.instagram.com/cornerstoneofnorthcote/" target="_blank">
-                        <img class="carousel-img" src="./assets/interior.jpg" alt="indoor hanging plants" />
-                    </a>
+                <a href="https://www.instagram.com/cornerstoneofnorthcote/" target="_blank">
+                    <img class="carousel-img" src="./assets/interior.jpg" alt="indoor hanging plants" />
+                </a>
             </div>
         </div>
         <div class="row justify-content-center button-padd">
@@ -158,11 +158,15 @@
         <div class="row justify-content-center">
             <div class="col-md order-md-2 address-text">
                 <p class="about-title">Come converse with us at.</p>
-                <p><img src="./assets/location.png" alt="location icon" />Unit 8, 57 Victoria Road, Northcote 3070</p>
-                <p><img src="./assets/clock.png" alt="clock icon" />Mon - Fri, 7:00am - 4:00pm</p>
+                <p>
+                    <img src="./assets/location.png" alt="location icon" />Unit 8, 57 Victoria Road, Northcote 3070</p>
+                <p>
+                    <img src="./assets/clock.png" alt="clock icon" />Mon - Fri, 7:00am - 4:00pm</p>
                 <p class="break">Sat - Sun, 8:00am - 4:00pm</p>
-                <p><img src="./assets/phone.png" alt="phone icon" />0423 443 234</p>
-                <p><img src="./assets/mail.png" alt="mail icon" />hello[at]cornerstonenorthcote.com</p>
+                <p>
+                    <img src="./assets/phone.png" alt="phone icon" />0423 443 234</p>
+                <p>
+                    <img src="./assets/mail.png" alt="mail icon" />hello[at]cornerstonenorthcote.com</p>
             </div>
             <div class="col-md order-md-1" id="map">
                 <!-- Map -->
@@ -193,7 +197,18 @@
 
 
     <!-- Optional JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js" type="text/javascript"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnKyFibCZqo9vySnLLqA4gmqfNN_lw3H8&callback=initMap">
+    </script>
     <script>
+        //Google Maps API
         function initMap() {
             var northcote = { lat: -37.778, lng: 145.010 };
             var map = new google.maps.Map(document.getElementById('map'), {
@@ -205,17 +220,18 @@
                 map: map
             });
         }
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnKyFibCZqo9vySnLLqA4gmqfNN_lw3H8&callback=initMap">
-    </script>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-        crossorigin="anonymous"></script>
+        //Element cache
+        const $body = $('html, body');
+
+        //Event Handlers
+        $("#to-gallery").click( () => {
+            $body.animate({
+                scrollTop: $("#gallery").offset().top
+            }, 800);
+        });
+
+    </script>
 </body>
 
 </html>
