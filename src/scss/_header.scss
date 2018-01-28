@@ -6,6 +6,7 @@
     }
     .corner-nav-link {
         color: $main-txt-color;
+        cursor: pointer;
     }
     .nav-social {
         width: 24px;
@@ -36,6 +37,7 @@
 .corner-hero {
     background-image: url('../assets/header.jpg');
     height: 650px;
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: none;
 }
