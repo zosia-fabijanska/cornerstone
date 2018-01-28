@@ -14,6 +14,17 @@
 .centred {
     text-align: center;
 }
+.insta-btn {
+    background-color: $aqua;
+    color: $white;
+    padding: 12px 24px;
+    border-radius: 2px;
+    font-family: $roboto;
+    &:hover {
+        text-decoration: none;
+        color: $white;
+    }
+}
 
 .carousel-img {
     width: 100%;
