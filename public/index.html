@@ -79,7 +79,7 @@
     </div>
 
     <!-- Menu Section -->
-    <div class="container" id="menu-section">
+    <div class="container fade-in" id="menu-section">
         <div class="row">
             <!-- Breakfast/Lunch -->
             <div class="col align-self-end">
@@ -102,7 +102,7 @@
     </div>
 
     <!-- About Us -->
-    <div class="container" id="about-us">
+    <div class="container fade-in" id="about-us">
         <div class="row justify-content-center">
             <div class="col-md align-self-center">
                 <p class="about-title">The Cornerstone of Northcote.</p>
@@ -120,7 +120,7 @@
     </div>
 
     <!-- Instagram Section -->
-    <div class="container" id="gallery">
+    <div class="container fade-in" id="gallery">
         <div class="row justify-content-center">
             <div class="col-lg-6 fresh-logo">
                 <img src="./assets/fresh-local.png" alt="local fresh logo" />
@@ -152,7 +152,7 @@
     </div>
 
     <!-- Location -->
-    <div class="container" id="location">
+    <div class="container fade-in" id="location">
         <div class="row justify-content-center">
             <div class="col-md order-md-2 address-text">
                 <p class="about-title">Come converse with us at.</p>
@@ -222,6 +222,11 @@
         //Element cache
         const $body = $('html, body');
 
+        const slowScrollTo = (section) => {
+            $body.animate({
+                scrollTop: $(section).offset().top
+            }, 800);
+        }
         //Event Handlers
         $(".scroll-icon").click(() => {
             $body.animate({
@@ -230,21 +235,33 @@
         });
 
         $("#to-gallery").click(() => {
-            $body.animate({
-                scrollTop: $("#gallery").offset().top
-            }, 800);
+            slowScrollTo('#gallery')
         });
 
         $("#to-contact").click(() => {
-            $body.animate({
-                scrollTop: $("#location").offset().top
-            }, 800);
+            slowScrollTo('#location')
         });
 
         $("#to-location").click(() => {
-            $body.animate({
-                scrollTop: $("#location").offset().top
-            }, 800);
+            slowScrollTo('#location')
+        });
+
+
+
+        //Fade In Scroll
+        $(document).ready(() => {
+            /* Every time the window is scrolled ... */
+            $(window).scroll(() => {
+                /* Check the location of each desired element */
+                $('.fade-in').each((i) => {
+                    const bottom_of_object = $('.fade-in').position().top + $('.fade-in').outerHeight();
+                    const bottom_of_window = $(this).scrollTop() + $(window).height();
+                    /* If the object is completely visible in the window, fade it it */
+                    if (bottom_of_window > bottom_of_object) {
+                        $('.fade-in').animate({ 'opacity': '1' }, 600);
+                    }
+                });
+            });
         });
 
     </script>

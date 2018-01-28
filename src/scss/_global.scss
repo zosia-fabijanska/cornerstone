@@ -3,6 +3,9 @@ body {
     background-color: $beige;
     font-family: $inconsolata;
 }
+.fade-in {
+    opacity: 0;
+}
 .row {
     padding: 32px;
 }
