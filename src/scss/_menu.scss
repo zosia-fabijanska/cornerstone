@@ -2,6 +2,15 @@
     text-align: right;
 }
 
+.menu-link {
+    color: $main-txt-color;
+    text-decoration: underline;
+    font-size: 30px;
+    &:hover {
+        color: $main-txt-color;
+    }
+}
+
 .menu-content {
     text-align: center;
     .menu-image {
@@ -19,6 +28,7 @@
         @media screen and (min-width: 576px) {
             font-size: 15em;
             top: -5%;
+            left:-5%;
         }
     }
 }
