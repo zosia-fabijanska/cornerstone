@@ -42,7 +42,7 @@
 .hide-me {
   display: none;
   @media screen and (min-width: 540px) {
-      display: block;
+      display: inline-block;
   }
 }
 

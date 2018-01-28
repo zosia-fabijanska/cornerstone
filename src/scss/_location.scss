@@ -11,4 +11,10 @@
     img {
         padding-right: 20px;
     }
+    a {
+        color: $main-txt-color;
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
