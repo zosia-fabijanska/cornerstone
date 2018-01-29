@@ -58,6 +58,6 @@ typings/
 .env
 
 #Folder for extra images
-./Images
+Images
 
 *.zip
