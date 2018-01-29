@@ -61,3 +61,5 @@ typings/
 Images
 
 *.zip
+
+*/.DS_Store
