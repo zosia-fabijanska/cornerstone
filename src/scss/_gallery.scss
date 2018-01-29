@@ -1,7 +1,10 @@
 .fresh-logo {
   img {
     position: absolute;
-    max-width: 100%;
+    max-width: 90%;
+    @media screen and (min-width: 540px) {
+      max-width: 100%;
+    }    
   }
   p {
     text-align: center;
