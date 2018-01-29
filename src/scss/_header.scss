@@ -38,6 +38,7 @@
 .corner-hero {
     background-image: url('../assets/header.jpg');
     height: 80vh;
+    max-height: 650px;
     background-attachment: scroll;      
     background-position: center;
     background-size: cover;
@@ -48,4 +49,3 @@
         background-attachment: fixed;  
     }
 }
-
