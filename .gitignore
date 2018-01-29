@@ -57,3 +57,7 @@ typings/
 # dotenv environment variables file
 .env
 
+#Folder for extra images
+./Images
+
+*.zip
