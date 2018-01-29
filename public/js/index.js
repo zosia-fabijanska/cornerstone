@@ -43,6 +43,7 @@ $("#to-location").click(() => {
 
 //Fade In Scroll
 $(document).ready(() => {
+
     /* Every time the window is scrolled ... */
     $(window).scroll(() => {
         /* Check the location of each desired element */
@@ -54,5 +55,10 @@ $(document).ready(() => {
                 $('.fade-in').animate({ 'opacity': '1' }, 600);
             }
         });
+        
+        const wScroll = $(this).scrollTop();
+        $('.corner-logo').css({
+            'transform':'translate(0px, '+ wScroll /5 +'%)'
+        })
     });
 });
