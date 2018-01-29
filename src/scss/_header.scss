@@ -38,11 +38,14 @@
 .corner-hero {
     background-image: url('../assets/header.jpg');
     height: 80vh;
+    background-attachment: scroll;      
     background-position: center;
-    background-attachment: fixed;
     background-size: cover;
     background-repeat: none;
     position: relative;
     overflow: hidden;
+    @media screen and (min-width:540px) {
+        background-attachment: fixed;  
+    }
 }
 
