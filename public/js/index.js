@@ -16,7 +16,8 @@ $(document).ready(() => {
     
     //Element cache
     const $body = $("html, body");
-    const $fadeIn = $('.fade-in')
+    const $fadeIn = $('.fade-in');
+    const $fadeInText = $('.fade-in-text');
     
     const slowScrollTo = section => {
         $body.animate(
@@ -48,6 +49,10 @@ $(document).ready(() => {
     $fadeIn.css({
         opacity: 0
     })
+    $fadeInText.css({
+        opacity:0
+    })
+    
 
 
     
@@ -60,6 +65,7 @@ $(document).ready(() => {
         /* If the object is completely visible in the window, fade it it */
         if (bottom_of_window > bottom_of_object) {
             $fadeIn.animate({ opacity: "1" }, 900);
+            $fadeInText.animate({opacity:"1"}, 1200);
         };
         
         const wScroll = $(this).scrollTop();
