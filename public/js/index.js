@@ -69,7 +69,7 @@ $(document).ready(() => {
         };
         
         const wScroll = $(this).scrollTop();
-        $(".corner-logo").css({
+        $(".corner-logo-lg").css({
             transform: "translate(0px, " + wScroll / 5 + "%)"
         });
     });
