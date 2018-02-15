@@ -45,6 +45,7 @@ $(document).ready(() => {
         slowScrollTo("#location");
     });
 
+    //Fade In Scroll
     // Set hidden elements
     $fadeIn.css({
         opacity: 0
@@ -53,10 +54,6 @@ $(document).ready(() => {
         opacity:0
     })
     
-
-
-    
-    //Fade In Scroll
     /* Every time the window is scrolled ... */
     $(window).scroll(() => {
         /* Check the location of each desired element */
