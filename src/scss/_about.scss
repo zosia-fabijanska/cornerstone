@@ -1,11 +1,31 @@
-.about-title {
-    font-family: $roboto;
-    font-size: 2em;
+.about-us-header {
+    background-image: url('../assets/about-header.jpg');
+    height: 40vh;
+    max-height: 500px;
+    max-width: 100%;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    position: relative;
+    overflow: hidden;
+    @media screen and (min-width:$screen-sm) {
+        background-attachment: fixed;  
+        height: 60vh;
+    }
+
+    .about-title {
+        margin-top: 10%;
+    }
 }
-.img-center {
-    text-align: center;
+
+.about-us {
+    padding-bottom: 64px;
     img {
-        max-width: 85%;
-        margin-top: 32px;
+        max-width: 100%;
+    }
+
+    .about-txt {
+        margin-bottom: 32px;
     }
 }

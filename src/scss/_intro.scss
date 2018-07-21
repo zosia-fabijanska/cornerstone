@@ -1,0 +1,43 @@
+
+.intro-section,
+.intro-two {
+    img {
+        max-width: 100%;
+    }
+
+    h4,
+    h3 {
+        font-family: $archivo;
+        color: $main-txt-color;
+    }
+
+    h4 {
+        margin: 17px 0;
+    }
+
+    .intro-heading {
+        margin-top: 32px;
+        @media screen and (min-width: $screen-lg) {
+            margin-top: 0;
+        }
+    }
+
+    p { 
+        margin-bottom: 64px;
+    }
+
+    .intro-text {
+        color:$med-grey;
+        font-size: 1rem;
+        a {
+            color: $med-grey;
+            text-decoration: underline;
+            &:hover {
+                color: $main-txt-color;
+            }
+        }
+    }
+
+
+}
+

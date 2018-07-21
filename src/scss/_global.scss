@@ -1,9 +1,47 @@
-body {
-    color: $main-txt-color;
-    background-color: $beige;
-    font-family: $inconsolata;
+//Global styles for body, h1 p tags etc.
+section {
+    padding: 64px 12px 0 12px;
 }
 
-.row-pad {
-    padding: 32px 0;
+h3,
+h4,
+p {
+    font-family: $archivo;
+    color: $main-txt-color;
+}
+
+p {
+    font-size: $main-txt;
+    line-height: 22px;
+}
+
+h3 {
+    font-size: $sub-txt;
+}
+
+h4 {
+    font-size: $sub-sm-txt;
+}
+
+.large-title {
+    font-size: 2rem;
+    padding: 0 16px;
+    opacity: 0.92;
+    background-color: $white;
+    max-width: fit-content;
+    font-family: $archivo;
+    color: $main-txt-color;
+    font-weight: 600;
+    letter-spacing: 11.29px;
+    margin: 0;
+    @media screen and (min-width: $screen-xsm) {
+        font-size: 2.5rem;
+    }
+    @media screen and (min-width: $screen-sm) {
+        font-size: $lg-txt;
+    }
+}
+
+.row-padd {
+    padding-bottom: 32px;
 }
