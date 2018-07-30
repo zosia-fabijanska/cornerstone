@@ -1,6 +1,9 @@
 //Global styles for body, h1 p tags etc.
 section {
     padding: 64px 12px 0 12px;
+    @media screen and (min-width: $screen-md){
+        padding: 64px 12px 64px 12px;
+    }
 }
 
 h3,
